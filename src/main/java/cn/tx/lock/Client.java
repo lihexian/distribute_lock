@@ -44,5 +44,6 @@ public class Client {
         service.shutdown();
         service.awaitTermination(10, TimeUnit.SECONDS);
         System.out.println(Files.lines(path).findFirst().orElse("0"));
+        System.out.println("-------------------");
     }
 }
